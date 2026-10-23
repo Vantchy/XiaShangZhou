@@ -1,0 +1,20 @@
+name: practice-checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  no-conflict-markers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 检查是否残留冲突标记
+        run: |
+          if grep -rn -E '^(<{7}|={7}|>{7})' --include='*.md' . ; then
+            echo '发现未解决的冲突标记，请先处理完冲突再合并。'
+            exit 1
+          fi
+          echo '检查通过：没有残留冲突标记。'
