@@ -9,4 +9,4 @@
 | 姜栋元 | rolandojiang | 一句话（想负责的方向或想学的东西）|
 | 夏羽仪 | xysquare| 这里写啥   |
 | 唐逸川 | 1076329253| ...   |
-| 姜栋元 | rolandojiang | 一句话 |
+| 姜栋元 | rolandojiang | 两句话 |
